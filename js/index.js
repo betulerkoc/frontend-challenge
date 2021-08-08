@@ -77,6 +77,9 @@ class Home {
           </div>
       `;
 
+    if (productCards.firstChild) {
+      productCards.removeChild(productCards.firstChild);
+    }
     productCard.innerHTML = content;
     this.productCards.appendChild(productCard);
   }
